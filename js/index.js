@@ -4,7 +4,9 @@ const foodSound = new Audio('music/food.mp3');
 const gameOverSound = new Audio('music/gameover.mp3');
 const moveSound = new Audio('music/move.mp3');
 const musicSound = new Audio('music/music.mp3');
-let speed = 5;
+var displaySpeed=document.getElementById('showSpeed')
+var rangeSlider=document.getElementById('currentSpeed');
+var speed = rangeSlider.value;
 let score = 0;
 let lastPaintTime = 0;
 let snakeArr = [
@@ -22,6 +24,14 @@ return;
 }
 lastPaintTime = ctime;
 gameEngine();
+}
+
+// setting the speed of snake
+
+rangeSlider.oninput=function ()
+{
+    displaySpeed.innerHTML=this.value;
+    speed=this.value;
 }
 
 function isCollide(snake) {

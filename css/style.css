@@ -17,7 +17,7 @@ align-items: center;
 #scoreBox{
 position: absolute;
 top: 9px;
-right: 200px;
+right: 50px;
 font-size: 39px;
 font-weight: bold;
 font-family: 'New Tegomin', serif;
@@ -26,12 +26,23 @@ font-family: 'New Tegomin', serif;
 #hiscoreBox{
 position: absolute;
 top: 59px;
-right: 140px;
+right: 50px;
 font-size: 39px;
 font-weight: bold;
 font-family: 'New Tegomin', serif;
 }
 
+#score
+{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    font-size: 39px;;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    align-content: center;
+    text-align: center;
+}
 #board{
 background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
 width: 90vmin;
