@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SnakeMania - Ek Gaming Katha</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<div class="body">
-<div id="scoreBox">Score: 0</div>
-<div id="hiscoreBox">HiScore: 0</div>
-<div id="score">
-    <p>Speed: <span id="showSpeed">5</span></p>
-    <input type="range" min="1" max="50" value="5" class="slider" id="currentSpeed">
-    
-  </div>
-<div id="board"></div>
-</div>
+    <div class="body" id="container">
+        <div>
+
+            <div class="content-box">
+                <a href="game.html">
+                    <button class="box">NEW GAME</button>
+                </a>
+
+            </div>
+            <div class="content-box">
+                <button class="box" id="speed">SET SPEED</button>
+            </div>
+
+            <div class="button-container">
+                
+                <button id="decrementButton" class="box1">-</button>
+                <p id="valueDisplay" class="box1" style="text-align: center;">5</p>
+                <button id="incrementButton" class="box1">+</button>
+                
+            </div>
+
+
+            <!-- <div class="content-box">
+                    <button id="musicButton" class="box" onclick="toggleMusic()">Music: ON</button>
+                </div> -->
+
+
+
+
+            <div class="content-box">
+                <label for="musicSelect"></label>
+                <select id="musicSelect" onchange="toggleMusic()" class="box" style="text-align: center;">
+                    <option value="on">MUSIC: ON</option>
+                    <option value="off">MUSIC: OFF</option>
+                </select>
+            </div>
+
+
+
+
+        </div>
+    </div>
+   
+
+<script src="/js/index1.js"></script>
 </body>
-<script src="js/index.js"></script>
-</html> 
+
+</html>
